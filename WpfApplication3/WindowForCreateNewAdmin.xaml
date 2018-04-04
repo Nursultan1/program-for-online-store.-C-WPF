@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApplication3.WindowForCreateNewAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="WindowForCreateNewAdmin" Height="501.88" Width="890.977" FontSize="16">
+    <Grid>
+        <Label x:Name="label" Content="Логин" HorizontalAlignment="Left" Margin="19,23,0,0" VerticalAlignment="Top" Width="89" Height="27"/>
+        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Left" Height="23" Margin="170,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="23" Margin="170,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Пароль" HorizontalAlignment="Left" Margin="19,69,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Создать" HorizontalAlignment="Left" Margin="19,385,0,0" VerticalAlignment="Top" Width="150" Click="button_Click"/>
+        <Label x:Name="label1_Copy" Content="Повторите пароль" HorizontalAlignment="Left" Margin="19,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.531,2.033"/>
+        <TextBox x:Name="textBoxPassword_Copy" HorizontalAlignment="Left" Height="23" Margin="170,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="Права нового пользователя" HorizontalAlignment="Left" Margin="521,10,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox" Content="Добавлять\Изменять\Удалять товары" HorizontalAlignment="Left" Margin="482,61,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox1" Content="Добавлять\Изменять\Отменять\Удалять заказы" HorizontalAlignment="Left" Margin="482,84,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox2" Content="Провести заказы" HorizontalAlignment="Left" Margin="482,106,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox3" Content="Отмечать заказы как завершенные" HorizontalAlignment="Left" Margin="482,125,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBox4" Content="Создовать других пользователей" HorizontalAlignment="Left" Margin="482,145,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

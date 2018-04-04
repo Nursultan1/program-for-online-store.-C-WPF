@@ -1,0 +1,68 @@
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe.config
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.pdb
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\MySql.Data.dll
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\bin\Debug\MySql.Data.xml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\Add.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\Test.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowForAddNewZakaz.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowForConfirm.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowForVueImg.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowLogin.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\App.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.cache
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.lref
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\Add.baml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.baml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\Test.baml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowForAddNewZakaz.baml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowForConfirm.baml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowForVueImg.baml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowLogin.baml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.g.resources
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.Properties.Resources.resources
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csproj.GenerateResource.Cache
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.exe
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.pdb
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowForCreateNewAdmin.g.cs
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WindowForCreateNewAdmin.baml
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\Interop.Accessibility.dll
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\Interop.LCC11.dll
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\Interop.MsoEuro.dll
+C:\Users\Nursultan\Documents\Visual Studio 2015\Projects\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csproj.ResolveComReference.cache
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe.config
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.exe
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\bin\Debug\WpfApplication3.pdb
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\bin\Debug\MySql.Data.xml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\Interop.Accessibility.dll
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\Interop.LCC11.dll
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\Interop.MsoEuro.dll
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csproj.ResolveComReference.cache
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\Add.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\Test.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowForAddNewZakaz.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowForConfirm.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowForCreateNewAdmin.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowForVueImg.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowLogin.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\App.g.cs
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.cache
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3_MarkupCompile.lref
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\Add.baml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\MainWindow.baml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\Test.baml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowForAddNewZakaz.baml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowForConfirm.baml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowForCreateNewAdmin.baml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowForVueImg.baml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WindowLogin.baml
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.g.resources
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.Properties.Resources.resources
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csproj.GenerateResource.Cache
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.csproj.CoreCompileInputs.cache
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.exe
+C:\Users\Nursultan\Documents\tmp\WpfApplication3\WpfApplication3\obj\Debug\WpfApplication3.pdb

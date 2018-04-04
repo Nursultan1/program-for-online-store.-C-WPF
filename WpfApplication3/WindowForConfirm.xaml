@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication3.WindowForConfirm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="Подвердите действия" Height="222.002" Width="310.862" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="32,38,0,0" VerticalAlignment="Top" Width="229" Height="63"/>
+        <Button x:Name="OK" Content="Да" HorizontalAlignment="Left" Margin="32,134,0,0" VerticalAlignment="Top" Width="95" Click="OK_Click"/>
+        <Button x:Name="Cancel" Content="Отмена" HorizontalAlignment="Left" Margin="160,134,0,0" VerticalAlignment="Top" Width="101" Click="Cancel_Click"/>
+
+    </Grid>
+</Window>

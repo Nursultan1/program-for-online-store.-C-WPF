@@ -1,0 +1,158 @@
+﻿<Window x:Class="WpfApplication3.WindowForAddNewZakaz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="Заказ" Height="736.136" Width="1105.417" WindowStartupLocation="CenterScreen" FontSize="16">
+    <Grid>
+        <Grid Margin="0,26.33,144.917,304.806" HorizontalAlignment="Right" Width="263.5"/>
+        <Button x:Name="buttonForAddNewZakaz" Content="Загрузить" Margin="220.5,638.06,0,0" VerticalAlignment="Top" Height="26" Click="buttonForAddNewZakaz_Click" HorizontalAlignment="Left" Width="201" FontSize="16"/>
+        <Button x:Name="button_Copy" Content="Очистить" HorizontalAlignment="Left" Margin="531.5,638.06,0,0" VerticalAlignment="Top" Width="201" Height="26" FontSize="16"/>
+        <StackPanel Orientation="Horizontal" Margin="0,10,0,-10">
+            <StackPanel HorizontalAlignment="Left" Margin="10,14.33,0,91.306" Width="347.5">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label x:Name="label_Copy" Content="Дата заказа" Width="156.46"/>
+                    <DatePicker x:Name="date" Width="177.757" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Наименования товара"/>
+                    <TextBox x:Name="textBoxNameTovara" Width="159" Height="22.947"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="ID товара"/>
+                    <TextBox x:Name="textBoxIdTovara" Width="252.5" Height="23.946"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Артикуль "/>
+                    <TextBox x:Name="articul"   Text="&#xA;" Width="253.5" Height="24.56"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Размер товара"/>
+                    <TextBox x:Name="textBoxSizeTovara" Width="212.5" Height="23.947"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Цвет товара"/>
+                    <TextBox x:Name="textBoxColorTovara" Width="229" Height="21.28"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Количество товара"/>
+                    <TextBox x:Name="textBoxNumbeTovara" Width="182" Height="22.28"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <StackPanel Margin="0,15,0,0" >
+                        <Label Content="Фотография товара"/>
+                        <Button x:Name="buttonForAddImgTovZakaz" Content="Открыть" Click="buttonForAddImgTovZakaz_Click"/>
+                    </StackPanel>
+                    <Image x:Name="ImgTovara" Width="179.5" Height="173.447"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="ФИО" Width="54.673"/>
+                    <TextBox x:Name="fio" Height="23" TextWrapping="Wrap" Text="&#xA;" Width="282"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Моб.тел" Width="69.673"/>
+                    <TextBox x:Name="tel" Height="23" TextWrapping="Wrap" Text="&#xA;" Width="265.167"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Соц.сети" Width="80.173"/>
+                    <TextBox x:Name="ssylka" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Width="254.5"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Width="364" Margin="0,0,0,215.806">
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Height="41.5" Width="77.5" Content="Адрес"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Страна"/>
+                    <TextBox x:Name="adresStrana" Height="23" TextWrapping="Wrap" Text="&#xA;" Width="283"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Город"/>
+                    <TextBox x:Name="AdresGorod" Height="23" TextWrapping="Wrap" Text="&#xA;" Width="289"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Край"/>
+                    <TextBox x:Name="adreskray" Height="23" TextWrapping="Wrap" Text="&#xA;" Width="298"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Область"/>
+                    <TextBox x:Name="adresOblast" Height="23" TextWrapping="Wrap" Text="&#xA;" RenderTransformOrigin="0.562,0.703" Width="275.5"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Район"/>
+                    <TextBox x:Name="adresRayon" Height="23" TextWrapping="Wrap" Text="&#xA;" Width="290.5"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Улица"/>
+                    <TextBox x:Name="adresUlitsa" Height="23" TextWrapping="Wrap" Text="&#xA;" Width="292"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Дом"/>
+                    <TextBox x:Name="adresDom" Height="23" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="305.5" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Корпус"/>
+                    <TextBox x:Name="adresKorpus" Height="23" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="286" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Квартира"/>
+                    <TextBox x:Name="adresKvartira" Height="23" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="269.5" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Доп.инфа"/>
+                    <TextBox x:Name="adresComment" Height="23" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="268" d:LayoutOverrides="TopPosition, BottomPosition"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Width="364.4" Margin="0,0,0,316.5">
+                <StackPanel Orientation="Horizontal"  Margin="5">
+                    <Label Content="Цена товара"/>
+                    <TextBox x:Name="textBoxPriceTovara" Height="23" TextWrapping="Wrap" Width="244"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5">
+                    <Label Content="Скидка"/>
+                    <TextBox x:Name="skidka" Width="285" Height="23.947" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5">
+                    <Label Content="Отправить курьером" Width="193.737"/>
+                    <CheckBox x:Name="checkBox" Content="" HorizontalAlignment="Left" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked" Width="51.975" FontSize="24"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5">
+                    <Label Content="Цена отпраки курьером"/>
+                    <TextBox x:Name="priceKur" IsReadOnly="True" Width="164" Height="24.613"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5">
+                    <Label Content="Стоимость доставки почтой"/>
+                    <TextBox x:Name="pricePochta" Width="133" Height="24.613"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Label Content="Индекс"/>
+                    <TextBox x:Name="textBoxIndex" Height="23" TextWrapping="Wrap" Width="285"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5">
+                    <Label Content="Трек"/>
+                    <TextBox x:Name="trek" Width="307" Height="21.946" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5">
+                    <Label Content="Предоплата"/>
+                    <TextBox x:Name="predoplata" Width="253" Height="23.947"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5">
+                    <Label Content="Заметка к заказу"/>
+                    <TextBox x:Name="comment" Width="220" Height="25.28"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <Button x:Name="button_Copy1" Content="Отмена" HorizontalAlignment="Left" Margin="835.5,638.06,0,0" VerticalAlignment="Top" Width="201" Height="26" FontSize="16"/>
+
+    </Grid>
+</Window>

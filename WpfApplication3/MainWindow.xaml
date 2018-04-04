@@ -1,0 +1,216 @@
+﻿<Window x:Class="WpfApplication3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="MainWindow"  Closed="Window_Closed" FontSize="16" Width="1437" Height="754.5">
+    <Grid>
+        <TabControl x:Name="tabControl" Grid.RowSpan="2">
+            <TabItem Header="Товары">
+                <Grid MaxHeight="700">
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" >
+                        <StackPanel>
+                            <DataGrid x:Name="dataGrid" Loaded="dataGrid_Loaded" IsReadOnly="True"
+                              RowBackground="LightGray" AlternatingRowBackground="White" RowHeight="50" AutoGenerateColumns="False" MaxHeight="600" >
+                                <DataGrid.ContextMenu>
+                                    <ContextMenu>
+                                        <MenuItem Header="Изменить" Click="MenuItem_Click"/>
+                                        <MenuItem Header="Удалить" Click="MenuItem_Click_1"/>
+                                        <MenuItem Header="Новый заказ" Click="MenuItem_Click_4"/>
+                                    </ContextMenu>
+                                </DataGrid.ContextMenu>
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Id" Binding="{Binding id}"/>
+                                    <DataGridTextColumn Header="Имя" Binding="{Binding name}"/>
+                                    <DataGridTextColumn Header="Цена" Binding="{Binding price}"/>
+                                    <DataGridTextColumn Header="Размер" Binding="{Binding size}"/>
+                                    <DataGridTextColumn Header="Цвет" Binding="{Binding color}"/>
+                                    <DataGridTextColumn Header="Артикль постовщика" Binding="{Binding articulPost}"/>
+                                    <DataGridTextColumn Header="Наш Артикль" Binding="{Binding articul}"/>
+                                    <DataGridTextColumn Header="Заметка к товару" Binding="{Binding comment}"/>
+                                    <DataGridCheckBoxColumn Header="Наличи"  Binding="{Binding  ButtonEnabled, Mode=OneWay}"/>
+                                    <DataGridTemplateColumn Header="Изображения">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Click="Button_Click_1">
+                                                    <Image Source="{Binding dis}"/>
+                                                </Button>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <StackPanel Orientation="Horizontal" Margin="0,10,0,0"/>
+                            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                <Button x:Name="Add" Content="Добавить новый товар" HorizontalAlignment="Left" VerticalAlignment="Top" Width="204" Height="33" Click="Add_Click" />
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Заказы">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="41*"/>
+                        <RowDefinition Height="328*"/>
+                        <RowDefinition Height="124*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="590*"/>
+                        <ColumnDefinition Width="189*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="label" Content="Сортировать" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,10.757,0,0" />
+                    <ComboBox x:Name="comboBox" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_SelectionChanged" RenderTransformOrigin="1.075,0.979" Margin="128,14.757,0,0">
+                        <TextBlock >Все</TextBlock>
+                        <TextBlock >Завершенные</TextBlock>
+                        <TextBlock>Оформленные</TextBlock>
+                        <TextBlock>Неоформленные</TextBlock>
+                    </ComboBox>
+                    <DataGrid x:Name="dataGrid1" Loaded="dataGrid1_Loaded" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="1"  >
+                        <DataGrid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Изменить" Click="MenuItem_Click_2"/>
+                                <MenuItem Header="Удалить" Click="MenuItem_Click_3"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                        <DataGrid.Resources>
+                            <Style TargetType="Hyperlink">
+                                <EventSetter Event="Click" Handler="DG_Hyperlink_Click"/>
+                            </Style>
+                        </DataGrid.Resources>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding id}"/>
+                            <DataGridTextColumn Header="ФИО" Binding="{Binding fio}"/>
+                            <DataGridTextColumn Header="Адрес" Binding="{Binding adres}"/>
+                            <DataGridTextColumn Header="Заметка к адресу " Binding="{Binding adresComment}"/>
+                            <DataGridTextColumn Header="Телефон" Binding="{Binding tel}"/>
+                            <DataGridTextColumn Header="Ссылка на соц.сети" Binding="{Binding ssylkaNaSosSeti}"/>
+                            <DataGridTextColumn Header="Имя товара" Binding="{Binding nameTovara}"/>
+                            <DataGridTextColumn Header="ID товара" Binding="{Binding idTovara}"/>
+                            <DataGridTextColumn Header="Артикуль товара" Binding="{Binding articul}"/>
+                            <DataGridTextColumn Header="Размер товара" Binding="{Binding sizeTovara}"/>
+                            <DataGridTextColumn Header="Цвет товара" Binding="{Binding sizeTovara}"/>
+                            <DataGridTextColumn Header="Количество" Binding="{Binding numbeTovara}"/>
+                            <DataGridTemplateColumn Header="Изображения">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Click="Button_Click_1">
+                                            <Image Source="{Binding imgForDataGrid}" Height="60"/>
+                                        </Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="Цена товара" Binding="{Binding priceTovara}"/>
+                            <DataGridTextColumn Header="Скидка" Binding="{Binding skidka}"/>
+                            <DataGridTextColumn Header="Цена доставки курьером" Binding="{Binding priceKur}"/>
+                            <DataGridTextColumn Header="Цена доставки почтой" Binding="{Binding priceDeliveryPochta}"/>
+                            <DataGridTextColumn Header="Предоплата" Binding="{Binding predOplata}"/>
+                            <DataGridHyperlinkColumn ContentBinding="{Binding trek}"   Header="Трек" Binding="{Binding trekHyperlink}"/>
+                            <DataGridTextColumn Header="Индекс" Binding="{Binding index}"/>
+                            <DataGridTextColumn Header="Статус" Binding="{Binding status}"/>
+                            <DataGridTextColumn Header="Имя оператора" Binding="{Binding nameOperatora}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button x:Name="buttonForAddNewZakaz" Content="Новый заказ" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="149" Height="37" Click="buttonForAddNewZakaz_Click" Margin="10,10.733,0,0" Grid.Row="2" d:LayoutOverrides="VerticalAlignment"/>
+                    <Button x:Name="buttonProvestiZakaz" Content="Провести заказ" Width="149" Height="37"  Click="buttonProvestiZakaz_Click" Margin="199.419,10.733,0,0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <Button x:Name="button3" Content="Отметит как завершенное"  VerticalAlignment="Top"  Height="37" Click="button3_Click" Margin="396,10.733,0,0" RenderTransformOrigin="-2.403,6.298" Grid.Row="2" HorizontalAlignment="Left" Width="205.162"/>
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" MinHeight="328"  TextWrapping="Wrap" MinWidth="179" Grid.Column="1" Margin="5,0,0,-0.001" Grid.Row="1" Width="300.162" d:LayoutOverrides="TopMargin, BottomMargin" Height="416.301" VerticalAlignment="Top" />
+                    <Button x:Name="button" Content="Сохранить" HorizontalAlignment="Left" Width="107.162" VerticalAlignment="Top" Margin="10,10,0,0" Grid.Column="1" Grid.Row="2" />
+                    <Button x:Name="button1" Content="Очистить" Margin="122.162,10,62.162,0" Height="25.28" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" d:LayoutOverrides="VerticalAlignment" />
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Статистика">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="49*"/>
+                        <RowDefinition Height="659*"/>
+                    </Grid.RowDefinitions>
+                    <DatePicker x:Name="DatePicker1" Margin="676,-3,0,0" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="135"/>
+                    <DatePicker x:Name="DatePicker2" Margin="876,-3,0,0" SelectedDateFormat="Short" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="135"/>
+                    <Button x:Name="buttonSortDate" Content="Применить" Margin="1054,0,0,0" Click="buttonSortDate_Click" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="168"  />
+                    <ComboBox x:Name="comboBoxStatistika" HorizontalAlignment="Left" Margin="423,0,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxStatistika_SelectionChanged" Height="27">
+                        <TextBlock >Все</TextBlock>
+                        <TextBlock >Завершенные</TextBlock>
+                        <TextBlock>Оформленные</TextBlock>
+                        <TextBlock>Неоформленные</TextBlock>
+                    </ComboBox>
+                    <ComboBox x:Name="comboBoxStatistikaUsers" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxStatistikaUsers_SelectionChanged" Height="27" >
+                    </ComboBox>
+                    <DataGrid x:Name="dataGridStatistika"  Loaded="dataGridStatistika_Loaded" AutoGenerateColumns="False" IsReadOnly="True" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1" >
+                        <DataGrid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Изменить" Click="MenuItem_Click_2"/>
+                                <MenuItem Header="Удалить" Click="MenuItem_Click_3"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+
+                        <DataGrid.Resources>
+                            <Style TargetType="Hyperlink">
+                                <EventSetter Event="Click" Handler="DG_Hyperlink_Click"/>
+                            </Style>
+                        </DataGrid.Resources>
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding id}"/>
+                            <DataGridTextColumn Header="ФИО" Binding="{Binding fio}"/>
+                            <DataGridTextColumn Header="Адрес" Binding="{Binding adres}"/>
+                            <DataGridTextColumn Header="Заметка к адресу " Binding="{Binding adresComment}"/>
+                            <DataGridTextColumn Header="Телефон" Binding="{Binding tel}"/>
+                            <DataGridTextColumn Header="Ссылка на соц.сети" Binding="{Binding ssylkaNaSosSeti}"/>
+                            <DataGridTextColumn Header="Имя товара" Binding="{Binding nameTovara}"/>
+                            <DataGridTextColumn Header="ID товара" Binding="{Binding idTovara}"/>
+                            <DataGridTextColumn Header="Артикуль товара" Binding="{Binding articul}"/>
+                            <DataGridTextColumn Header="Размер товара" Binding="{Binding sizeTovara}"/>
+                            <DataGridTextColumn Header="Цвет товара" Binding="{Binding sizeTovara}"/>
+                            <DataGridTextColumn Header="Количество" Binding="{Binding numbeTovara}"/>
+                            <DataGridTemplateColumn Header="Изображения">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Click="Button_Click_1">
+                                            <Image Source="{Binding imgForDataGrid}" Height="40"/>
+                                        </Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="Цена товара" Binding="{Binding priceTovara}"/>
+                            <DataGridTextColumn Header="Скидка" Binding="{Binding skidka}"/>
+                            <DataGridTextColumn Header="Цена доставки курьером" Binding="{Binding priceKur}"/>
+                            <DataGridTextColumn Header="Цена доставки почтой" Binding="{Binding priceDeliveryPochta}"/>
+                            <DataGridTextColumn Header="Предоплата" Binding="{Binding predOplata}"/>
+                            <DataGridHyperlinkColumn ContentBinding="{Binding trek}"   Header="Трек" Binding="{Binding trekHyperlink}"/>
+                            <DataGridTextColumn Header="Индекс" Binding="{Binding index}"/>
+                            <DataGridTextColumn Header="Статус" Binding="{Binding status}"/>
+                            <DataGridTextColumn Header="Имя оператора" Binding="{Binding nameOperatora}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label x:Name="label2" Content="Админы" HorizontalAlignment="Left" Margin="10,-4,0,0" VerticalAlignment="Top" Width="76" Height="31"/>
+                    <Label x:Name="label3" Content="Статусы заказов" HorizontalAlignment="Left" Margin="292,-4,0,0" VerticalAlignment="Top" Width="131" RenderTransformOrigin="0.606,0.462" Height="31"/>
+                    <Label x:Name="label4" Content="Время  от" HorizontalAlignment="Left" Margin="571,-4,0,0" VerticalAlignment="Top" Height="31" Width="81"/>
+                    <Label x:Name="label5" Content="до" HorizontalAlignment="Left" Margin="833,-4,0,0" RenderTransformOrigin="0.179,2" Width="28" Height="31" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Профиль">
+                <Grid Margin="0,0,0,6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" MinWidth="300"/>
+                        <ColumnDefinition Width="1098*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="label1" Content="Вы авторизованы как: " HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="178" FontSize="16" Height="31" />
+                    <Button x:Name="buttonCreateNewAdmin" Content="Создать нового пользователя" Margin="10,76,0,0" FontSize="14.667" Click="buttonCreateNewAdmin_Click" Height="50" Width="192" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.526,-0.8"/>
+                    <Label x:Name="labelAdminName" Content="Label" Margin="183,23,0,0" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.55,3.806" Grid.ColumnSpan="2"/>
+                    <Label x:Name="label1_Copy" Content="Изменить пароль" HorizontalAlignment="Left" Margin="485,21,0,0" VerticalAlignment="Top" Width="178" FontSize="16" Grid.Column="1" Height="31"/>
+                    <Label x:Name="label1_Copy1" Content="Текуший пароль" HorizontalAlignment="Left" Margin="258,67,0,0" VerticalAlignment="Top" Width="178" FontSize="16" Grid.Column="1" Height="31"/>
+                    <Label x:Name="label1_Copy2" Content="Новый пароль" HorizontalAlignment="Left" Margin="258,113,0,0" VerticalAlignment="Top" Width="178" FontSize="16" Grid.Column="1" Height="31"/>
+                    <Label x:Name="label1_Copy3" Content="Повторите новый пароль" HorizontalAlignment="Left" Margin="258,165,0,0" VerticalAlignment="Top" Width="201" FontSize="16" Grid.Column="1" Height="31"/>
+                    <Button x:Name="buttonEditPassword" Content="Изменить пароль" Margin="473,210,0,0" FontSize="14.667" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34" Width="198"/>
+                    <TextBox x:Name="textBoxCurrentPassword" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="473,67,12,367" Grid.Column="1"  Height="40" Width="435"/>
+                    <TextBox x:Name="textBoxNewPassword" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="473,113,15,321" Grid.Column="1" Height="40" Width="435" />
+                    <TextBox x:Name="textBoxConfirmNewPassword"  HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="473,165,15,269" Grid.Column="1" Height="40" Width="435" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
